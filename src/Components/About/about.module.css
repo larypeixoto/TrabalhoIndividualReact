@@ -1,0 +1,159 @@
+.container {
+  background-color: #93c6e7;
+  width: 100%;
+  border-radius: 8px;
+  padding: 2rem 1rem 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px #08152570;
+}
+
+.picProfile {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px #08152570;
+}
+
+.name {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  line-height: 1.7rem;
+  color: #3674b5;
+  font-family: "Yrsa", serif;
+  text-shadow: 0 4px 6px #08152570;
+}
+
+.username {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.5px;
+  color: #1572a1;
+  font-family: "Yrsa", serif;
+  text-shadow: 0 4px 6px #08152550;
+}
+
+.socialMedia {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 8px;
+  color: #1572a1;
+  font-family: "Rubik", sans-serif;
+  text-shadow: 0 4px 6px #08152550;
+  justify-content: center;
+}
+
+.social {
+  text-align: center;
+  align-items: center;
+}
+
+.number {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #1572a1;
+}
+
+.socialType {
+  font-size: 1rem;
+  font-weight: 450;
+  letter-spacing: 0.5px;
+  color: #1572a1;
+}
+
+.containerInfo {
+  width: 100%;
+  text-align: left;
+}
+
+.details {
+  width: 100%;
+  border-bottom: 1px solid #1572a180;
+  color: #1572a1;
+  font-family: "Rubik", sans-serif;
+  text-shadow: 0 4px 6px #08152550;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 450;
+  letter-spacing: 0.5px;
+  margin-top: 6px;
+}
+
+.infoTopic {
+  width: 100%;
+  color: #1572a1;
+  font-family: "Rubik", sans-serif;
+  text-shadow: 0 4px 6px #08152550;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.info {
+  font-size: 0.8rem;
+  color: #1572a1;
+  font-family: "Rubik", sans-serif;
+  text-shadow: 0 4px 6px #08152540;
+}
+
+/* Darkmode */
+
+:global(body.dark-mode) .container {
+  background-color: #2d3748;
+}
+
+:global(body.dark-mode) .name {
+  color: #bcccdc;
+  font-family: "Yrsa", serif;
+  text-shadow: 0 4px 6px #08152570;
+}
+
+:global(body.dark-mode) .username {
+  color: #bcccdc;
+  font-family: "Yrsa", serif;
+  text-shadow: 0 4px 6px #08152570;
+}
+
+:global(body.dark-mode) .socialMedia {
+  color: #bcccdc;
+}
+
+:global(body.dark-mode) .number {
+  color: #bcccdc;
+}
+
+:global(body.dark-mode) .socialType {
+  color: #bcccdc;
+}
+
+:global(body.dark-mode) .details {
+  border-bottom: 1px solid #bcccdc80;
+  color: #bcccdc;
+}
+
+:global(body.dark-mode) .infoTopic {
+  color: #bcccdc;
+  text-shadow: 0 4px 6px #08152550;
+}
+
+:global(body.dark-mode) .info {
+  color: #bcccdc;
+  text-shadow: 0 4px 6px #08152540;
+}
+
+.container,
+.name,
+.username,
+.socialMedia,
+.number,
+.socialType,
+.details,
+.infoTopic,
+.info {
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}

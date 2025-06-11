@@ -1,0 +1,58 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  justify-content: center;
+  align-items: flex-start;
+  max-height: 100%;
+  overflow-y: auto;
+  padding: 0px;
+}
+
+.card::-webkit-scrollbar {
+  height: 2px;
+  width: 4px;
+}
+
+.card::-webkit-scrollbar-thumb {
+  background-color: #4982a680;
+  border-radius: 10px;
+}
+
+.eachCard {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 8rem;
+  height: 12rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.eachCard:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+  color: #000000;
+  cursor: pointer;
+}
+
+.dramaName {
+  font-size: 0.6rem;
+  color: #93c6e7;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Darkmode */
+
+:global(body.dark-mode) .card::-webkit-scrollbar-thumb {
+  background-color: #bcccdc80;
+  border-radius: 10px;
+}

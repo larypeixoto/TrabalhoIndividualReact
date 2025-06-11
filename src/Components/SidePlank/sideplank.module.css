@@ -1,0 +1,18 @@
+.containerTop {
+    width: 100%;
+}
+
+.containerBottom {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top:1rem;
+}
+
+.containerBLeft {
+    width:60%;
+}
+
+.containerBRight {
+    width:38%;
+}

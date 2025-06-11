@@ -1,0 +1,32 @@
+.bodyHome {
+  background-image: url("../../assets/bgClaro.jpg");
+  background-position: -190px -30px;
+  object-fit: cover;
+  height: 45rem;
+  width: 100%;
+}
+
+.itensbg {
+  width: 50%;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Darkmode */
+
+:global(body.dark-mode) .bodyHome {
+  background-image: url("../../assets/bgEscuro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bodyHome {
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}

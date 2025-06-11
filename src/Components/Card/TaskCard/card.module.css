@@ -1,0 +1,30 @@
+.card {
+    background-color: #b6d9f0;
+    border: 1px solid #1572A1;
+    border-radius: 8px;
+    outline: none;
+    height: 2.2rem;
+    width: 19.4rem;
+    color: #1572A1;
+    margin: 0.3rem 0rem 0.3rem 0rem;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.2px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.card:hover { 
+  transform: scale(1.02);
+}
+
+/* Darkmode */
+
+:global(body.dark-mode) .card {
+  background-color: #9ba4b5;
+  border: 1px solid #000000;
+  color: #000000;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}

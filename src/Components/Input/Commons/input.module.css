@@ -1,0 +1,38 @@
+.inputStyle {
+  background-color: #b6d9f0;
+  border: 1px solid #1572a1;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  padding: 0.2rem 0.8rem;
+  color: #1572a1;
+  font-size: 0.8rem;
+  outline: none;
+  height: 2.2rem;
+  width: 18rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.inputStyle::placeholder {
+  color: #1572a1;
+  opacity: 50;
+}
+
+/* Darkmode */
+
+:global(body.dark-mode) .inputStyle {
+  background-color: #9ba4b5;
+  border: 1px solid #000000;
+  color: #000000;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+:global(body.dark-mode) .inputStyle::placeholder {
+  color: #00000070;
+}
+
+.inputStyle,
+.inputStyle::placeholder {
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}

@@ -1,0 +1,97 @@
+.wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 6px #08152570;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #93c6e7;
+  border-radius: 0 0 8px 8px;
+  padding: 0.5rem 0;
+  z-index: 1111;
+  width: 15rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.dropdown ul li {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  list-style-type: none;
+}
+
+.dropdown ul li a {
+  color: #3674b5;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  text-shadow: #08152550;
+}
+
+.dropdown ul li:hover {
+  background-color: #1572a140;
+}
+
+.dropdown ul li a:hover {
+  background-color: transparent;
+}
+
+.wrapper:hover .dropdown {
+  display: flex;
+}
+
+/* Darkmode */
+
+:global(body.dark-mode) .dropdown {
+  background-color: #2d3748;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+:global(body.dark-mode) .dropdown ul li a {
+  color: #bcccdc;
+}
+
+:global(body.dark-mode) .dropdown ul li a:hover {
+  background-color: #4a556840;
+}
+
+:global(body.dark-mode) .dropdown ul li:hover {
+  background-color: #4a556840;
+}
+
+.dropdown,
+.dropdown ul li a,
+.dropdown ul li:hover,
+.dropdown ul li a:hover {
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}

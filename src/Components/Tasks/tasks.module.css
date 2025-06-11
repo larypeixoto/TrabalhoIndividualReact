@@ -1,0 +1,13 @@
+.containerAddList {
+  display: flex;
+  align-items: center;
+  gap: 0rem;
+  margin-left: auto;
+  position: relative;
+  z-index: 999;
+}
+
+.titleDrama {
+    text-align: center;
+    align-items: center;
+}
